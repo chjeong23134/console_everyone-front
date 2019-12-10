@@ -1,19 +1,34 @@
 <div class="mt-5 mb-5">
-    <div class="drop-down">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+    <div class="row mb-1">
+        <div class="col-6 align-self-center">
+            <ul class="nav nav-pills">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
+        <div class="col-md-6 text-right" style="min-width: 362px;">
+            <select class="custom-select" style="max-width: 100px;">
+                <option selected="">제목</option>
 
-            <a class="dropdown-item" href="#">Another action</a>
+                <option value="1">제목</option>
 
-            <a class="dropdown-item" href="#">Something else here</a>
+                <option value="2">작성자</option>
+            </select>
 
-            <div class="dropdown-divider"></div>
-            
-            <a class="dropdown-item" href="#">Separated link</a>
+            <input class="form-control-sm" type="text" placeholder="검색" id = "inputSmall">
+
+            <c-button text="검색"></c-button>
         </div>
     </div>
+    
 
     <ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center" ng-repeat="list in $ctrl._getList()">

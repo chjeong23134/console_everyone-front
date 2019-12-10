@@ -44,6 +44,18 @@ class ComprehensiveBoardController {
                 writer: 'chjeong',
                 writeDate: moment('2019-12-01').format('YYYY-MM-DD'),
                 writeTime: moment('183500', "hmmss").format('HH:mm:SS')
+            },
+            {
+                name: '자유 게시글 8',
+                writer: 'chjeong',
+                writeDate: moment('2019-12-01').format('YYYY-MM-DD'),
+                writeTime: moment('183500', "hmmss").format('HH:mm:SS')
+            },
+            {
+                name: '자유 게시글 9',
+                writer: 'chjeong',
+                writeDate: moment('2019-12-01').format('YYYY-MM-DD'),
+                writeTime: moment('183500', "hmmss").format('HH:mm:SS')
             }
         ];
     }
