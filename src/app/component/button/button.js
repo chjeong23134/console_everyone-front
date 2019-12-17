@@ -1,10 +1,18 @@
 class ButtonController {
-    constructor() {
-
+    constructor($location) {
+        this._location = $location;
     }
 
     $onInit() {
+        
+    }
 
+    _goToHref() {
+        if(!this.href) {
+            return;
+        }
+
+        this._location.path(this.href);
     }
 }
 
