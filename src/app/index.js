@@ -6,6 +6,7 @@ import './style.scss';
 
 import home from './component/board/homeBoard/homeBoard';
 import login from './component/board/loginBoard/loginBoard';
+import signup from './component/board/signupBoard/signupBoard';
 import comprehensive from './component/board/comprehensiveBoard/comprehensiveBoard';
 
 import navBar from './component/navBar/navBar';
@@ -19,6 +20,7 @@ angular.module('ngApp',[ngRoute])
         $routeProvider
             .when('/', home)
             .when('/login', login)
+            .when('/signup', signup)
             .when('/comprehensive', comprehensive)
             .otherwise({
                 redirectTo: '/'
