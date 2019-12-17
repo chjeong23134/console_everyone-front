@@ -22,6 +22,7 @@ export default {
     controllerAs: '$ctrl',
     bindings: {
         href: '@',
-        text: '@'
+        text: '@',
+        color: '@'
     }
 }
