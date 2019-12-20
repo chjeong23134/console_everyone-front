@@ -8,10 +8,10 @@ import home from './component/board/homeBoard/homeBoard';
 import login from './component/board/loginBoard/loginBoard';
 import signup from './component/board/signupBoard/signupBoard';
 import comprehensive from './component/board/comprehensiveBoard/comprehensiveBoard';
+import write from './component/board/writeBoard/writeBoard';
 
 import navBar from './component/navBar/navBar';
 import list from './component/list/list';
-import footer from './component/footer/footer';
 
 import button from './component/button/button';
 
@@ -22,6 +22,7 @@ angular.module('ngApp',[ngRoute])
             .when('/login', login)
             .when('/signup', signup)
             .when('/comprehensive', comprehensive)
+            .when('/write', write)
             .otherwise({
                 redirectTo: '/'
             });
@@ -33,6 +34,5 @@ angular.module('ngApp',[ngRoute])
     })
     .component('cNavBar', navBar)
     .component('cList', list)
-    .component('cFooter', footer)
     
     .component('cButton', button);

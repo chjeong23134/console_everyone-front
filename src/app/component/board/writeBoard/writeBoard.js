@@ -1,4 +1,4 @@
-class FooterController {
+class WriteBoardController {
     constructor() {
 
     }
@@ -9,8 +9,8 @@ class FooterController {
 }
 
 export default {
-    controller: FooterController,
-    template: require('./footer.html'),
+    controller: WriteBoardController,
+    template: require('./writeBoard.html'),
     controllerAs: '$ctrl',
     bindings: {}
 }

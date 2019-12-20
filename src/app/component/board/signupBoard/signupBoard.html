@@ -1,29 +1,49 @@
-<div class="container mt-5" style="text-align: center;">
-    <div class="card border-primary mb-3" style="display: inline-block; min-width: 362px;">
+<div style="text-align: center; width: 100%;">
+    <div class="card border-primary mt-5" style="display: inline-block; margin-bottom: 200px;">
         <div class="card-header">회원가입</div>
 
         <div class="card-body">
             <div class="form-group">
                 <div>
+                    <label style="float: left;">닉네임</label>
+
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="mt-2">
                     <label style="float: left;">이메일</label>
 
-                    <input type="email" class="form-control" placeholder="Enter email">
-                </div>
+                    <input type="email" class="form-control">
+                </div class="mt-2">
                 
                 <div class="mt-2">
                     <label style="float: left;">비밀번호</label>
 
-                    <input type="password" class="form-control" placeholder="Enter password">
+                    <input type="password" class="form-control">
                 </div>
 
                 <div class="mt-2">
                     <label style="float: left;">비밀번호 확인</label>
 
-                    <input type="password" class="form-control" placeholder="Enter password">
+                    <input type="text" value="correct value" class="form-control is-valid" id="inputValid">
+
+                    <div class="valid-feedback">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">비밀번호가 일치합니다.</font>
+                        </font>
+                    </div>
+
+                    <input type="text" value="wrong value" class="form-control is-invalid">
+
+                    <div class="invalid-feedback">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">비밀번호가 다릅니다.</font>
+                        </font>
+                    </div>
                 </div>
 
                 <div>
-                    <c-button class="m-4" style="float: right;" href="" text="회원가입" color="green"></c-button>
+                    <c-button class="m-4" style="float: right;" href="" text="확인" color="orange"></c-button>
                 </div>
             </div>
         </div>
