@@ -13,12 +13,10 @@ import write from './component/board/writeBoard/writeBoard';
 import navBar from './component/navBar/navBar';
 import list from './component/list/list';
 
-import button from './component/button/button';
-
 angular.module('ngApp',[ngRoute])
     .config(($routeProvider, $locationProvider) => {
         $routeProvider
-            .when('/', home)
+            .when('/', comprehensive)
             .when('/login', login)
             .when('/signup', signup)
             .when('/comprehensive', comprehensive)
@@ -34,5 +32,3 @@ angular.module('ngApp',[ngRoute])
     })
     .component('cNavBar', navBar)
     .component('cList', list)
-    
-    .component('cButton', button);

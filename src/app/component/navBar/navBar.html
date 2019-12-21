@@ -1,17 +1,19 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">ㅋㅋ</a>
+<div class="nav">
+    <h2 class="logo">
+        ECon
+    </h2>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <input type="checkbox" id="check">
 
-    <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item" ng-repeat="menu in $ctrl.menu">
-                <a class="nav-link" href="{{menu.href}}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{menu.name}}</font></font></a>
-            </li>
-        </ul>
+    <label for="check" class="show-drop-menu">
+        <i class="fas fa-ellipsis-h"></i>
+    </label>
 
-        <c-button href="/login" text="로그인" color="blue"></c-button>
-    </div>
-</nav>
+    <ul class="menu">
+        <a href="{{menu.href}}" ng-repeat="menu in $ctrl.menu">{{menu.text}}</a>
+
+        <label for="check" class="hide-drop-menu">
+            <i class="fas fa-times"></i>
+        </label>
+    </ul>
+</div>

@@ -6,15 +6,15 @@ class NavBarController {
     $onInit() {
         this.menu = [
                         {
-                            name: 'PlayStaion',
+                            text: 'PlayStaion',
                             href: '/comprehensive'
                         },
                         {
-                            name: 'Nintendo',
+                            text: 'Nintendo',
                             href: '/comprehensive'
                         },
                         {
-                            name: 'Xbox',
+                            text: 'Xbox',
                             href: '/comprehensive'
                         }
                     ];

@@ -1,11 +1,233 @@
-@import "~bootswatch/dist/yeti/variables";
-@import "~bootstrap/scss/bootstrap";
-@import "~bootswatch/dist/yeti/bootswatch";
+// @import "~bootswatch/dist/yeti/variables";
+// @import "~bootstrap/scss/bootstrap";
+// @import "~bootswatch/dist/yeti/bootswatch";
 
-body {
-    background-color: #f8f8f8;
-    footer {
-        margin-top: 90px;
-        background-color: #ececec;
+/* Color Theme Swatches in Hex */
+.blue-glitter-abstract-background-1-hex { color: #0460D9; }
+.blue-glitter-abstract-background-2-hex { color: #0476D9; }
+.blue-glitter-abstract-background-3-hex { color: #0597F2; }
+.blue-glitter-abstract-background-4-hex { color: #05AFF2; }
+.blue-glitter-abstract-background-5-hex { color: #05C7F2; }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+    list-style: none;
+
+    body {
+        background-color: #f8f8f8;
+
+        .nav {
+            height: 100px;
+            background: #34495e;
+            padding: 0 20px;
+            color: #fff;
+
+            .logo {
+                line-height: 100px;
+                float: left;
+                text-transform: uppercase;
+            }
+
+            .menu {
+                float: right;
+                line-height: 100px;
+
+                a {
+                    color: #fff;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    padding: 0 10px;
+                    transition: 0.4s;
+                }
+            }
+
+            .show-drop-menu,
+            .hide-drop-menu {
+                transition: 0.4s;
+                font-size: 30px;
+                cursor: pointer;
+                display: none;
+            }
+
+            .show-drop-menu{
+                float: right;
+
+                i {
+                    line-height: 100px;
+                }
+            }
+
+            .menu a:hover,
+            .show-drop-menu:hover,
+            .hide-drop-menu:hover{
+                color: #3498db;
+            }
+
+            #check {
+                position: absolute;
+                visibility: hidden;
+                z-index: -1111;
+            }
+
+            @media screen and (max-width:750px) {
+                .show-drop-menu,
+                .hide-drop-menu{
+                    display: block;
+                }
+
+                .menu {
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    background: #333;
+                    right: -100%;
+                    top: 0;
+                    text-align: center;
+                    padding: 80px 0;
+                    line-height: normal;
+                    transition: 0.7s;
+
+                    a {
+                        display: block;
+                        padding: 20px;
+                    }
+                }
+
+                .hide-drop-menu{
+                    position: absolute;
+                    top: 40px;
+                    right: 40px;
+                }
+
+                #check:checked ~ .menu{
+                    right: 0;
+                }
+            }
+        }
+
+        .board {
+            margin: 30px 20%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .board {
+                margin: 30px 10%;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            .board {
+                margin: 30px 10px;
+            }
+        }
+
+        .search-box {
+            margin-bottom: 10px;
+            display: block;
+            text-align: right;
+
+            .select-menu {
+                height: 30px;
+                border: 1px solid #c8c8c8;
+                font-size: 10pt;
+                color: #63717f;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+            }
+
+            .search-input {
+                width: 150px;
+                height: 30px;
+                border: 1px solid #c8c8c8;
+                font-size: 10pt;
+                padding-left: 10px;
+                color: #63717f;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+            }
+
+            .search-button {
+                border: 0;
+                padding: 7px;
+                background-color: #34495e;
+                color: #fff;
+                border-radius: 8px;
+            }
+
+            .search-button:hover {
+                color: #3498db;
+                transition: 0.4s;
+            }
+        }
+
+        .list-box {
+            margin-bottom: 10px;
+            .list {
+                border-top: 0.5px solid;
+                border-left: 0.5px solid;
+                border-right: 0.5px solid;
+                border-color: #c8c8c8;
+                background-color: #fff;
+    
+                .list-item {
+                    border-bottom: 0.5px solid;
+                    border-color: #c8c8c8;
+                    height: 50px;
+    
+                    .list-item-title {
+                        margin: 14px;
+                        float: left;
+                    }
+    
+                    .list-item-user-info {
+                        margin: 8px;
+                        float: right;
+                        font-size: small;
+                    }
+                }
+            }
+        }
+
+        .page-box {
+
+            .page-menu {
+
+                .page-menu-item {
+                    a {
+                        padding-left: 6px;
+                        padding-right: 1px;
+                        text-decoration: none;
+                        color: #34495e;
+                    }
+                }
+
+                .selected {
+                    border-bottom: 1px solid #34495e;
+                }
+            }
+        }
+
+        .page-box,
+        .page-menu,
+        .page-menu-item {
+            display: inline;
+        }
+
+        .write-button {
+            border: 0;
+            padding: 7px;
+            background-color: #34495e;
+            color: #fff;
+            border-radius: 8px;
+        }
+
+        .write-button:hover {
+            color: #3498db;
+            transition: 0.4s;
+        }
     }
 }

@@ -4,55 +4,55 @@ class ComprehensiveBoardController {
     constructor() {
         this.list = [
             {
-                name: '자유 게시글 1',
+                title: '자유 게시글 1',
                 writer: 'chjeong',
                 writeDate: moment('2019-12-01').format('YYYY-MM-DD'),
                 writeTime: moment('183500', "hmmss").format('HH:mm:SS')
             },
             {
-                name: '자유 게시글 2',
+                title: '자유 게시글 2',
                 writer: 'chjeong',
                 writeDate: moment('2019-12-01').format('YYYY-MM-DD'),
                 writeTime: moment('183500', "hmmss").format('HH:mm:SS')
             },
             {
-                name: '자유 게시글 3',
+                title: '자유 게시글 3',
                 writer: 'chjeong',
                 writeDate: moment('2019-12-01').format('YYYY-MM-DD'),
                 writeTime: moment('183500', "hmmss").format('HH:mm:SS')
             },
             {
-                name: '자유 게시글 4',
+                title: '자유 게시글 4',
                 writer: 'chjeong',
                 writeDate: moment('2019-12-01').format('YYYY-MM-DD'),
                 writeTime: moment('183500', "hmmss").format('HH:mm:SS')
             },
             {
-                name: '자유 게시글 5',
+                title: '자유 게시글 5',
                 writer: 'chjeong',
                 writeDate: moment('2019-12-01').format('YYYY-MM-DD'),
                 writeTime: moment('183500', "hmmss").format('HH:mm:SS')
             },
             {
-                name: '자유 게시글 6',
+                title: '자유 게시글 6',
                 writer: 'chjeong',
                 writeDate: moment('2019-12-01').format('YYYY-MM-DD'),
                 writeTime: moment('183500', "hmmss").format('HH:mm:SS')
             },
             {
-                name: '자유 게시글 7',
+                title: '자유 게시글 7',
                 writer: 'chjeong',
                 writeDate: moment('2019-12-01').format('YYYY-MM-DD'),
                 writeTime: moment('183500', "hmmss").format('HH:mm:SS')
             },
             {
-                name: '자유 게시글 8',
+                title: '자유 게시글 8',
                 writer: 'chjeong',
                 writeDate: moment('2019-12-01').format('YYYY-MM-DD'),
                 writeTime: moment('183500', "hmmss").format('HH:mm:SS')
             },
             {
-                name: '자유 게시글 9',
+                title: '자유 게시글 9',
                 writer: 'chjeong',
                 writeDate: moment('2019-12-01').format('YYYY-MM-DD'),
                 writeTime: moment('183500', "hmmss").format('HH:mm:SS')
