@@ -169,12 +169,12 @@
             }
         }
 
-        .search-box {
+        .select-box, .filter-box {
             margin-bottom: 10px;
             display: block;
             text-align: right;
 
-            .select-menu {
+            .select-menu, .filter-menu {
                 height: 30px;
                 border: 1px solid #c8c8c8;
                 font-size: 10pt;
@@ -183,10 +183,22 @@
                 -moz-border-radius: 5px;
                 border-radius: 5px;
             }
+        }
 
-            .search-button:hover {
-                color: #3498db;
-                transition: 0.4s;
+        @media screen and (max-width: 420px) {
+            .select-box, .filter-box {
+                margin-bottom: 10px;
+                display: inline-block;
+    
+                .select-menu, .filter-menu {
+                    height: 30px;
+                    border: 1px solid #c8c8c8;
+                    font-size: 10pt;
+                    color: #63717f;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
+                }
             }
         }
 
@@ -219,9 +231,7 @@
         }
 
         .page-box {
-
             .page-menu {
-
                 .page-menu-item {
                     a {
                         padding-left: 6px;
@@ -266,6 +276,10 @@
                     margin: 10px 60px;
                 }
 
+                #search {
+                    width: 300px;
+                }
+
                 #title {
                     width: 600px;
                 }
@@ -274,6 +288,47 @@
                     min-height: 400px;
                     min-width: 600px;
                     max-width: 600px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            .card {
+                border: 1px solid #c8c8c8;
+                display: block;
+                margin: auto;
+                width: 600px;
+    
+                .card-header {
+                    background-color: #34495e;
+                    color: #fff;
+                    text-align: center;
+                }
+    
+                .card-body {
+                    text-align: center;
+                
+                    .input {
+                        width: 300px;
+                    }
+
+                    .button {
+                        margin: 10px 60px;
+                    }
+                    
+                    #search {
+                        width: 300px;
+                    }
+
+                    #title {
+                        width: 400px;
+                    }
+    
+                    #content {
+                        min-height: 400px;
+                        min-width: 400px;
+                        max-width: 400px;
+                    }
                 }
             }
         }
@@ -301,7 +356,11 @@
                     .button {
                         margin: 10px 60px;
                     }
-                    
+
+                    #search {
+                        width: 300px;
+                    }
+
                     #title {
                         width: 400px;
                     }
@@ -339,6 +398,10 @@
                         margin: 10px 30px;
                     }
                     
+                    #search {
+                        width: 150px;
+                    }
+
                     #title {
                         width: 300px;;
                     }
@@ -347,6 +410,47 @@
                         min-height: 400px;
                         min-width: 300px;
                         max-width: 300px;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            .card {
+                border: 1px solid #c8c8c8;
+                display: block;
+                margin: auto;
+                width: 300px;
+    
+                .card-header {
+                    background-color: #34495e;
+                    color: #fff;
+                    text-align: center;
+                }
+    
+                .card-body {
+                    text-align: center;
+                
+                    .input {
+                        width: 150px;
+                    }
+
+                    .button {
+                        margin: 10px 30px;
+                    }
+                    
+                    #search {
+                        width: 150px;
+                    }
+                    
+                    #title {
+                        width: 200px;
+                    }
+    
+                    #content {
+                        min-height: 400px;
+                        min-width: 200px;
+                        max-width: 200px;
                     }
                 }
             }

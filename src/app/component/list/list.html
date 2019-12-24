@@ -1,12 +1,26 @@
 <div class="board">
-    <div class="search-box">
+    <div class="filter-box">
+        <select class="filter-menu" style="float: left;">
+            <option class="filter-menu-item">전체</option>
+
+            <option class="filter-menu-item">자유 게시판</option>
+            
+            <option class="filter-menu-item">공략&꿀팁 게시판</option>
+            
+            <option class="filter-menu-item">후기&자랑 게시판</option>
+            
+            <option class="filter-menu-item">중고거래 게시판</option>
+        </select>
+    </div>
+
+    <div class="select-box">
         <select class="select-menu">
             <option class="select-menu-item">제목</option>
 
             <option class="select-menu-item">작성자</option>
         </select>
 
-        <input class="input" type="text">
+        <input class="input" id="search" type="text">
 
         <c-button text="검색" href=""></c-button>
     </div>
