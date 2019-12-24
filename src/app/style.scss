@@ -18,6 +18,35 @@
     body {
         background-color: #f8f8f8;
 
+        .mt-10 {
+            margin-top: 10px;
+        }
+        
+        .button {
+            border: 0;
+            padding: 7px;
+            background-color: #34495e;
+            color: #fff;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            color: #3498db;
+            transition: 0.4s;
+        }
+
+        .input {
+            width: 150px;
+            height: 30px;
+            border: 1px solid #c8c8c8;
+            font-size: 10pt;
+            padding-left: 10px;
+            color: #63717f;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+
         .nav {
             height: 100px;
             background: #34495e;
@@ -138,26 +167,6 @@
                 border-radius: 5px;
             }
 
-            .search-input {
-                width: 150px;
-                height: 30px;
-                border: 1px solid #c8c8c8;
-                font-size: 10pt;
-                padding-left: 10px;
-                color: #63717f;
-                -webkit-border-radius: 5px;
-                -moz-border-radius: 5px;
-                border-radius: 5px;
-            }
-
-            .search-button {
-                border: 0;
-                padding: 7px;
-                background-color: #34495e;
-                color: #fff;
-                border-radius: 8px;
-            }
-
             .search-button:hover {
                 color: #3498db;
                 transition: 0.4s;
@@ -217,17 +226,83 @@
             display: inline;
         }
 
-        .write-button {
-            border: 0;
-            padding: 7px;
-            background-color: #34495e;
-            color: #fff;
-            border-radius: 8px;
+        .card {
+            border: 1px solid #c8c8c8;
+            display: block;
+            margin: auto;
+            width: 800px;
+
+            .card-header {
+                background-color: #34495e;
+                color: #fff;
+                text-align: center;
+            }
+
+            .card-body {
+                text-align: center;
+            
+                .input {
+                    width: 300px;
+                }
+
+                .button {
+                    margin: 10px 60px;
+                }
+            }
         }
 
-        .write-button:hover {
-            color: #3498db;
-            transition: 0.4s;
+        @media screen and (max-width: 900px) {
+            .card {
+                border: 1px solid #c8c8c8;
+                display: block;
+                margin: auto;
+                width: 500px;
+    
+                .card-header {
+                    background-color: #34495e;
+                    color: #fff;
+                    text-align: center;
+                }
+    
+                .card-body {
+                    text-align: center;
+                
+                    .input {
+                        width: 300px;
+                    }
+
+                    .button {
+                        margin: 10px 60px;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .card {
+                border: 1px solid #c8c8c8;
+                display: block;
+                margin: auto;
+                width: 400px;
+    
+                .card-header {
+                    background-color: #34495e;
+                    color: #fff;
+                    text-align: center;
+                }
+    
+                .card-body {
+                    text-align: center;
+                
+                    .input {
+                        width: 200px;
+                    }
+
+                    .button {
+                        margin: 10px 30px;
+                    }
+                }
+            }
         }
     }
 }
