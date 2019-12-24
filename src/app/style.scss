@@ -63,12 +63,20 @@
                 float: right;
                 line-height: 100px;
 
-                a {
+                .menu-item {
                     color: #fff;
                     text-transform: uppercase;
                     text-decoration: none;
                     padding: 0 10px;
                     transition: 0.4s;
+                }
+
+                .line {
+                    display: none;
+                }
+
+                .menu-item-login {
+                    margin-left: 80px;
                 }
             }
 
@@ -118,9 +126,18 @@
                     line-height: normal;
                     transition: 0.7s;
 
-                    a {
+                    .menu-item {
                         display: block;
                         padding: 20px;
+                    }
+
+                    .line {
+                        display: inline-block;
+                        width: 80%;
+                    }
+
+                    .menu-item-login {
+                        margin-left: 0;
                     }
                 }
 

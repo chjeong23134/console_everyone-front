@@ -10,7 +10,11 @@
     </label>
 
     <ul class="menu">
-        <a href="{{menu.href}}" ng-repeat="menu in $ctrl.menu">{{menu.text}}</a>
+        <a class="menu-item" href="{{menu.href}}" ng-repeat="menu in $ctrl.menu">{{menu.text}}</a>
+
+        <hr class="line">
+
+        <a class="menu-item menu-item-login" href="/login">Login</a>
 
         <label for="check" class="hide-drop-menu">
             <i class="fas fa-times"></i>
