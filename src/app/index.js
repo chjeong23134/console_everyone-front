@@ -18,7 +18,7 @@ import button from './component/button/button';
 angular.module('ngApp',[ngRoute])
     .config(($routeProvider, $locationProvider) => {
         $routeProvider
-            .when('/', home)
+            .when('/', write)
             .when('/login', login)
             .when('/signup', signup)
             .when('/comprehensive', comprehensive)

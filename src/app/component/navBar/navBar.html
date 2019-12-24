@@ -3,18 +3,18 @@
         ECon
     </h2>
 
-    <input type="checkbox" id="check">
+    <input type="checkbox" id="check" ng-model="$ctrl.checkedYN">
 
     <label for="check" class="show-drop-menu">
         <i class="fas fa-ellipsis-h"></i>
     </label>
 
     <ul class="menu">
-        <a class="menu-item" href="{{menu.href}}" ng-repeat="menu in $ctrl.menu">{{menu.text}}</a>
+        <a class="menu-item" href="{{menu.href}}" ng-repeat="menu in $ctrl.menu" ng-click="$ctrl._closeMenu()">{{menu.text}}</a>
 
         <hr class="line">
 
-        <a class="menu-item menu-item-login" href="/login">Login</a>
+        <a class="menu-item menu-item-login" href="/login" ng-click="$ctrl._closeMenu()">Login</a>
 
         <label for="check" class="hide-drop-menu">
             <i class="fas fa-times"></i>

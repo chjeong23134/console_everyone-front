@@ -12,7 +12,7 @@ class ButtonController {
             return;
         }
 
-        this._location.href(this.href);
+        this._location.path(this.href);
     }
 }
 

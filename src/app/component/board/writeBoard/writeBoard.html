@@ -1,25 +1,22 @@
-<div class="container" style="text-align: center;">
-    <div class="card border-primary mt-5 mb-3" style="display: inline-block; min-width: 362px;">
-        <div class="card-header">글쓰기</div>
-
+<div class="board">
+    <div class="card">
+        <div class="card-header">
+            <p>글쓰기</p>
+        </div>
         <div class="card-body">
-            <div class="form-group">
-                <div>
-                    <label style="float: left;">제목</label>
+            <div class="mt-10">
+                <p>제목</p>
 
-                    <input type="text" class="form-control">
-                </div>
-                
-                <div class="mt-2">
-                    <label style="float: left;">내용</label>
-
-                    <textarea class="form-control" style="margin-top: 0px; margin-bottom: 0px; min-height: 300px;"></textarea>
-                </div>
-
-                <div class="mt-2">
-                    <c-button class="m-4" style="float: right;" href="" text="완료" color="blue"></c-button>
-                </div>
+                <input class="input" id="title" type="text">
             </div>
+
+            <div class="mt-10">
+                <p>내용</p>
+
+                <textarea class="input" id="content"></textarea>
+            </div>
+            
+            <c-button text="글쓰기" href=""></c-button>
         </div>
     </div>
 </div>

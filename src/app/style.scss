@@ -265,6 +265,16 @@
                 .button {
                     margin: 10px 60px;
                 }
+
+                #title {
+                    width: 600px;
+                }
+
+                #content {
+                    min-height: 400px;
+                    min-width: 600px;
+                    max-width: 600px;
+                }
             }
         }
 
@@ -290,6 +300,16 @@
 
                     .button {
                         margin: 10px 60px;
+                    }
+                    
+                    #title {
+                        width: 400px;
+                    }
+    
+                    #content {
+                        min-height: 400px;
+                        min-width: 400px;
+                        max-width: 400px;
                     }
                 }
             }
@@ -317,6 +337,16 @@
 
                     .button {
                         margin: 10px 30px;
+                    }
+                    
+                    #title {
+                        width: 300px;;
+                    }
+    
+                    #content {
+                        min-height: 400px;
+                        min-width: 300px;
+                        max-width: 300px;
                     }
                 }
             }

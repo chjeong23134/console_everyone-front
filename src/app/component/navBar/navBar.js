@@ -19,6 +19,10 @@ class NavBarController {
                         }
                     ];
     }
+    
+    _closeMenu() {
+        this.checkedYN = false;
+    }
 }
 
 export default {
