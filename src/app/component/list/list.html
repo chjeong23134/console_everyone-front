@@ -1,15 +1,15 @@
 <div class="board">
     <div class="filter-box">
         <select class="filter-menu" style="float: left;">
-            <option class="filter-menu-item">전체</option>
+            <option>전체</option>
 
-            <option class="filter-menu-item">자유 게시판</option>
+            <option>자유 게시판</option>
             
-            <option class="filter-menu-item">공략&꿀팁 게시판</option>
+            <option>공략&꿀팁 게시판</option>
             
-            <option class="filter-menu-item">후기&자랑 게시판</option>
+            <option>후기&자랑 게시판</option>
             
-            <option class="filter-menu-item">중고거래 게시판</option>
+            <option>중고거래 게시판</option>
         </select>
     </div>
 
@@ -29,13 +29,21 @@
         <ul class="list">
             <li class="list-item" ng-repeat="list in $ctrl._getList()">
                 <p class="list-item-title">{{list.title}}</p>
-    
-                <div class="list-item-user-info">
+
+                <div class="list-item-info">
                     <small>{{list.writer}}</small>
     
                     <br>
     
                     <small>{{list.writeDate}}</small>
+                </div>
+                
+                <div class="list-item-info">
+                    <small><i class="far fa-thumbs-up"></i>{{list.like}}</small>
+    
+                    <br>
+    
+                    <small><i class="far fa-eye"></i>{{list.views}}</small>
                 </div>
             </li>
         </ul>

@@ -4,6 +4,17 @@
             <p>글쓰기</p>
         </div>
         <div class="card-body">
+            <div class="mt-10" style="margin-bottom: 20px; height: 30px;">
+                <select class="filter-menu" style="float: left;">
+                    <option>자유 게시판</option>
+                    
+                    <option>공략&꿀팁 게시판</option>
+                    
+                    <option>후기&자랑 게시판</option>
+                    
+                    <option>중고거래 게시판</option>
+                </select>
+            </div>
             <div class="mt-10">
                 <p>제목</p>
 
@@ -16,7 +27,13 @@
                 <textarea class="input" id="content"></textarea>
             </div>
             
-            <c-button text="글쓰기" href=""></c-button>
+            <div class="mt-10" style="display: inline-block;">
+                <input style="margin: 20px;" type="file">
+            </div>
+
+            <div class="mt-10" style="height: 70px;">
+                <c-button class="button-margin" style="float: right;" text="글쓰기" href=""></c-button>
+            </div>
         </div>
     </div>
 </div>

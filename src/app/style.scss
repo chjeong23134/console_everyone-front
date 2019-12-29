@@ -221,8 +221,9 @@
                         float: left;
                     }
     
-                    .list-item-user-info {
+                    .list-item-info {
                         margin: 8px;
+                        margin-left: 12px;
                         float: right;
                         font-size: small;
                     }
@@ -255,24 +256,46 @@
 
         .card {
             border: 1px solid #c8c8c8;
+            border-radius: 5px;
+            border-radius: 5px;
             display: block;
             margin: auto;
             width: 800px;
+            background-color: #fff;
 
             .card-header {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
                 background-color: #34495e;
                 color: #fff;
                 text-align: center;
             }
 
             .card-body {
-                text-align: center;
-            
-                .input {
-                    width: 300px;
+
+                .filter-menu {
+                    margin-left: 17px;
+                    width: 95%;
+                    height: 30px;
+                    border: 1px solid #c8c8c8;
+                    font-size: 10pt;
+                    color: #63717f;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
                 }
 
-                .button {
+                p {
+                    margin: 0px 30px;
+                    margin-bottom: 5px;
+                }
+
+                .input {
+                    width: 300px;
+                    margin-left: 17px;
+                }
+
+                .button-margin {
                     margin: 10px 60px;
                 }
 
@@ -281,13 +304,37 @@
                 }
 
                 #title {
-                    width: 600px;
+                    width: 95%;
                 }
 
                 #content {
                     min-height: 400px;
-                    min-width: 600px;
-                    max-width: 600px;
+                    min-width: 95%;
+                    max-width: 95%;
+                }
+
+                .comment-item {
+                    height: 50px;
+                    margin: 0px 30px;
+                    margin-bottom: 5px;
+
+                    hr {
+                        width: 100%;
+                        margin: 10px auto;
+                        color: #c8c8c8;
+                    }
+    
+                    .comment-item-content {
+                        margin: 14px;
+                        float: left;
+                    }
+    
+                    .comment-item-info {
+                        margin: 8px;
+                        margin-left: 12px;
+                        float: right;
+                        font-size: small;
+                    }
                 }
             }
         }
@@ -298,6 +345,7 @@
                 display: block;
                 margin: auto;
                 width: 600px;
+                background-color: #fff;
     
                 .card-header {
                     background-color: #34495e;
@@ -306,10 +354,22 @@
                 }
     
                 .card-body {
-                    text-align: center;
+
+                    .filter-menu {
+                        margin-left: 17px;
+                        width: 200px;
+                        height: 30px;
+                        border: 1px solid #c8c8c8;
+                        font-size: 10pt;
+                        color: #63717f;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        border-radius: 5px;
+                    }
                 
                     .input {
                         width: 300px;
+                        margin-left: 17px;
                     }
 
                     .button {
@@ -321,13 +381,37 @@
                     }
 
                     #title {
-                        width: 400px;
+                        width: 550px;
                     }
     
                     #content {
                         min-height: 400px;
-                        min-width: 400px;
-                        max-width: 400px;
+                        min-width: 550px;
+                        max-width: 550px;
+                    }
+                    
+                    .comment-item {
+                        height: 50px;
+                        margin: 0px 30px;
+                        margin-bottom: 5px;
+
+                        hr {
+                            width: 100%;
+                            margin: 10px auto;
+                            color: #c8c8c8;
+                        }
+        
+                        .comment-item-content {
+                            margin: 14px;
+                            float: left;
+                        }
+        
+                        .comment-item-info {
+                            margin: 8px;
+                            margin-left: 12px;
+                            float: right;
+                            font-size: small;
+                        }
                     }
                 }
             }
@@ -339,6 +423,7 @@
                 display: block;
                 margin: auto;
                 width: 500px;
+                background-color: #fff;
     
                 .card-header {
                     background-color: #34495e;
@@ -347,10 +432,22 @@
                 }
     
                 .card-body {
-                    text-align: center;
+
+                    .filter-menu {
+                        margin-left: 17px;
+                        width: 200px;
+                        height: 30px;
+                        border: 1px solid #c8c8c8;
+                        font-size: 10pt;
+                        color: #63717f;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        border-radius: 5px;
+                    }
                 
                     .input {
                         width: 300px;
+                        margin-left: 17px;
                     }
 
                     .button {
@@ -362,13 +459,37 @@
                     }
 
                     #title {
-                        width: 400px;
+                        width: 450px;
                     }
     
                     #content {
                         min-height: 400px;
-                        min-width: 400px;
-                        max-width: 400px;
+                        min-width: 450px;
+                        max-width: 450px;
+                    }
+
+                    .comment-item {
+                        height: 50px;
+                        margin: 0px 30px;
+                        margin-bottom: 5px;
+
+                        hr {
+                            width: 100%;
+                            margin: 10px auto;
+                            color: #c8c8c8;
+                        }
+        
+                        .comment-item-content {
+                            margin: 14px;
+                            float: left;
+                        }
+        
+                        .comment-item-info {
+                            margin: 8px;
+                            margin-left: 12px;
+                            float: right;
+                            font-size: small;
+                        }
                     }
                 }
             }
@@ -380,6 +501,7 @@
                 display: block;
                 margin: auto;
                 width: 400px;
+                background-color: #fff;
     
                 .card-header {
                     background-color: #34495e;
@@ -388,10 +510,22 @@
                 }
     
                 .card-body {
-                    text-align: center;
+
+                    .filter-menu {
+                        margin-left: 17px;
+                        width: 200px;
+                        height: 30px;
+                        border: 1px solid #c8c8c8;
+                        font-size: 10pt;
+                        color: #63717f;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        border-radius: 5px;
+                    }
                 
                     .input {
                         width: 200px;
+                        margin-left: 17px;
                     }
 
                     .button {
@@ -403,19 +537,199 @@
                     }
 
                     #title {
-                        width: 300px;;
+                        width: 350px;;
                     }
     
                     #content {
                         min-height: 400px;
-                        min-width: 300px;
-                        max-width: 300px;
+                        min-width: 350px;
+                        max-width: 350px;
+                    }
+
+                    .comment-item {
+                        height: 50px;
+                        margin: 0px 30px;
+                        margin-bottom: 5px;
+
+                        hr {
+                            width: 100%;
+                            margin: 10px auto;
+                            color: #c8c8c8;
+                        }
+        
+                        .comment-item-content {
+                            margin: 14px;
+                            float: left;
+                        }
+        
+                        .comment-item-info {
+                            margin: 8px;
+                            margin-left: 12px;
+                            float: right;
+                            font-size: small;
+                        }
                     }
                 }
             }
         }
 
         @media screen and (max-width: 420px) {
+            .card {
+                border: 1px solid #c8c8c8;
+                display: block;
+                margin: auto;
+                width: 370px;
+                background-color: #fff;
+    
+                .card-header {
+                    background-color: #34495e;
+                    color: #fff;
+                    text-align: center;
+                }
+    
+                .card-body { 
+                    
+                    .filter-menu {
+                        margin-left: 17px;
+                        width: 200px;
+                        height: 30px;
+                        border: 1px solid #c8c8c8;
+                        font-size: 10pt;
+                        color: #63717f;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        border-radius: 5px;
+                    }
+                
+                    .input {
+                        width: 90%;
+                        margin-left: 17px;
+                    }
+
+                    .button {
+                        margin: 10px 30px;
+                    }
+                    
+                    #search {
+                        width: 150px;
+                    }
+                    
+                    #title {
+                        width: 87%;
+                    }
+    
+                    #content {
+                        min-height: 400px;
+                        min-width: 87%;
+                        max-width: 87%;
+                    }
+
+                    .comment-item {
+                        height: 50px;
+                        margin: 0px 30px;
+                        margin-bottom: 5px;
+
+                        hr {
+                            width: 100%;
+                            margin: 10px auto;
+                            color: #c8c8c8;
+                        }
+        
+                        .comment-item-content {
+                            margin: 14px;
+                            float: left;
+                        }
+        
+                        .comment-item-info {
+                            margin: 8px;
+                            margin-left: 12px;
+                            float: right;
+                            font-size: small;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 380px) {
+            .card {
+                border: 1px solid #c8c8c8;
+                display: block;
+                margin: auto;
+                width: 340px;
+                background-color: #fff;
+    
+                .card-header {
+                    background-color: #34495e;
+                    color: #fff;
+                    text-align: center;
+                }
+    
+                .card-body {
+
+                    .filter-menu {
+                        margin-left: 17px;
+                        width: 200px;
+                        height: 30px;
+                        border: 1px solid #c8c8c8;
+                        font-size: 10pt;
+                        color: #63717f;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        border-radius: 5px;
+                    }
+                
+                    .input {
+                        width: 90%;
+                        margin-left: 17px;
+                    }
+
+                    .button {
+                        margin: 10px 30px;
+                    }
+                    
+                    #search {
+                        width: 150px;
+                    }
+                    
+                    #title {
+                        width: 87%;
+                    }
+    
+                    #content {
+                        min-height: 400px;
+                        min-width: 87%;
+                        max-width: 87%;
+                    }
+
+                    .comment-item {
+                        height: 50px;
+                        margin: 0px 30px;
+                        margin-bottom: 5px;
+
+                        hr {
+                            width: 100%;
+                            margin: 10px auto;
+                            color: #c8c8c8;
+                        }
+        
+                        .comment-item-content {
+                            margin: 14px;
+                            float: left;
+                        }
+        
+                        .comment-item-info {
+                            margin: 8px;
+                            margin-left: 12px;
+                            float: right;
+                            font-size: small;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 340px) {
             .card {
                 border: 1px solid #c8c8c8;
                 display: block;
@@ -429,10 +743,22 @@
                 }
     
                 .card-body {
-                    text-align: center;
+
+                    .filter-menu {
+                        margin-left: 17px;
+                        width: 200px;
+                        height: 30px;
+                        border: 1px solid #c8c8c8;
+                        font-size: 10pt;
+                        color: #63717f;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        border-radius: 5px;
+                    }
                 
                     .input {
                         width: 150px;
+                        margin-left: 17px;
                     }
 
                     .button {
@@ -444,13 +770,39 @@
                     }
                     
                     #title {
-                        width: 200px;
+                        width: 250px;
                     }
     
                     #content {
                         min-height: 400px;
-                        min-width: 200px;
-                        max-width: 200px;
+                        min-width: 250px;
+                        max-width: 250px;
+                    }
+
+                    .comment-item {
+                        border-color: #c8c8c8;
+                        height: 50px;
+                        margin: 0px 30px;
+                        margin-bottom: 5px;
+
+                        
+                        hr {
+                            width: 100%;
+                            margin: 10px auto;
+                            color: #c8c8c8;
+                        }
+        
+                        .comment-item-content {
+                            margin: 14px;
+                            float: left;
+                        }
+        
+                        .comment-item-info {
+                            margin: 8px;
+                            margin-left: 12px;
+                            float: right;
+                            font-size: small;
+                        }
                     }
                 }
             }
