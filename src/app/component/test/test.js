@@ -1,8 +1,4 @@
 class TestController {
-    constructor() {
-        
-    }
-
     $onInit() {
         this._testMethod();
     }
@@ -14,7 +10,6 @@ class TestController {
 
 export default {
     controller: TestController,
-    template: require('./test.html'),
     controllerAs: '$ctrl',
-    bindings: {}
+    template: require('./test.html')
 }

@@ -1,16 +1,10 @@
 class WriteBoardController {
-    constructor() {
-
-    }
-
-    $onInit() {
-
-    }
+    
 }
 
 export default {
+    url: '/write',
     controller: WriteBoardController,
-    template: require('./writeBoard.html'),
     controllerAs: '$ctrl',
-    bindings: {}
+    template: require('./writeBoard.html')
 }

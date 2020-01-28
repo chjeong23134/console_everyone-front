@@ -1,16 +1,10 @@
 class LoginBoardController {
-    constructor() {
-
-    }
-
-    $onInit() {
-
-    }
+    
 }
 
 export default {
+    url: '/login',
     controller: LoginBoardController,
-    template: require('./loginBoard.html'),
     controllerAs: '$ctrl',
-    bindings: {}
+    template: require('./loginBoard.html')
 }

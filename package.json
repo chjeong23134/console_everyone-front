@@ -1,17 +1,19 @@
 {
-  "name": "console_everyone-front",
+  "name": "pster-front",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack -w",
-    "devserver": "webpack-dev-server --open"
+    "build": "webpack -w",
+    "devserver": "webpack-dev-server --open",
+    "start": "npm run devserver"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
+    "@uirouter/angularjs": "^1.0.24",
     "angular": "^1.7.8",
     "angular-route": "^1.7.9",
     "autoprefixer": "^9.7.1",

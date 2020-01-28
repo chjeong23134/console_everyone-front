@@ -1,16 +1,10 @@
 class SignupBoardController {
-    constructor() {
-
-    }
-
-    $onInit() {
-
-    }
+    
 }
 
 export default {
+    url: '/signup',
     controller: SignupBoardController,
-    template: require('./signupBoard.html'),
     controllerAs: '$ctrl',
-    bindings: {}
+    template: require('./signupBoard.html')
 }

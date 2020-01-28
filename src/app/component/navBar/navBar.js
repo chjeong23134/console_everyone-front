@@ -1,21 +1,17 @@
 class NavBarController {
-    constructor() {
-        
-    }
-
     $onInit() {
         this.menu = [
                         {
                             text: 'PlayStaion',
-                            href: '/comprehensive'
+                            href: '/#!/bbs'
                         },
                         {
                             text: 'Nintendo',
-                            href: '/comprehensive'
+                            href: '/#!/bbs'
                         },
                         {
                             text: 'Xbox',
-                            href: '/comprehensive'
+                            href: '/#!/bbs'
                         }
                     ];
     }
@@ -27,7 +23,6 @@ class NavBarController {
 
 export default {
     controller: NavBarController,
-    template: require('./navBar.html'),
     controllerAs: '$ctrl',
-    bindings: {}
+    template: require('./navBar.html')
 }

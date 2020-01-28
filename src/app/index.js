@@ -1,6 +1,6 @@
 import angular from 'angular';
 import ngRoute from 'angular-route';
-import 'bootstrap';
+import uiRoute from "@uirouter/angularjs";
 
 import './style.scss';
 
@@ -16,23 +16,16 @@ import list from './component/list/list';
 
 import button from './component/button/button';
 
-angular.module('ngApp',[ngRoute])
-    .config(($routeProvider, $locationProvider) => {
-        $routeProvider
-            .when('/', read)
-            .when('/login', login)
-            .when('/signup', signup)
-            .when('/comprehensive', comprehensive)
-            .when('/write', write)
-            .when('/read', read)
-            .otherwise({
-                redirectTo: '/'
-            });
-        $locationProvider
-            .html5Mode({
-                enabled: true,
-                requireBase: false
-            });
+angular.module('ngApp',[uiRoute])
+    .config(($stateProvider, $urlRouterProvider) => {
+        $urlRouterProvider.otherwise('/');
+
+        $stateProvider.state('home', home);
+        $stateProvider.state('login', login);
+        $stateProvider.state('signup', signup);
+        $stateProvider.state('comprehensive', comprehensive);
+        $stateProvider.state('write', write);
+        $stateProvider.state('read', read);
     })
     .component('cNavBar', navBar)
     .component('cList', list)

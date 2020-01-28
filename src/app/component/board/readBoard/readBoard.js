@@ -1,16 +1,10 @@
 class ReadBoardController {
-    constructor() {
-
-    }
-
-    $onInit() {
-
-    }
+    
 }
 
 export default {
+    url: '/read',
     controller: ReadBoardController,
-    template: require('./readBoard.html'),
     controllerAs: '$ctrl',
-    bindings: {}
+    template: require('./readBoard.html')
 }

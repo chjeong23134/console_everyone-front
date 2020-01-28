@@ -3,10 +3,6 @@ class ButtonController {
         this._location = $location;
     }
 
-    $onInit() {
-
-    }
-
     _goToHref() {
         if(!this.href) {
             return;

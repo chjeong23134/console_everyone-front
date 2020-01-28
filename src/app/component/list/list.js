@@ -6,10 +6,6 @@ class ListController {
         this.nowTime = moment().format('HH[:]mm[:]SS')
     }
 
-    $onInit() {
-
-    }
-
     _getList() {
         return this.list;
     }
@@ -17,8 +13,8 @@ class ListController {
 
 export default {
     controller: ListController,
-    template: require('./list.html'),
     controllerAs: '$ctrl',
+    template: require('./list.html'),
     bindings: {
         list: '<'
     }

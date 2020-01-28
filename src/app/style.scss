@@ -54,9 +54,11 @@
             color: #fff;
 
             .logo {
+                color: #fff;
                 line-height: 100px;
                 float: left;
                 text-transform: uppercase;
+                text-decoration: none;
             }
 
             .menu {
@@ -154,7 +156,7 @@
         }
 
         .board {
-            margin: 30px 20%;
+            margin: 30px 25%;
         }
 
         @media screen and (max-width: 1000px) {
@@ -258,7 +260,7 @@
             border: 1px solid #c8c8c8;
             border-radius: 5px;
             border-radius: 5px;
-            display: block;
+            display: inline-block;
             margin: auto;
             width: 800px;
             background-color: #fff;
@@ -316,10 +318,21 @@
                     max-width: 95%;
                 }
 
+                .comment-write {
+                    margin-left: 5%;
+                    margin-bottom: 20px;
+                    min-width: 80%;
+                    max-width: 80%;
+                    min-height: 80px;
+                }
+
                 .comment-item {
-                    height: 50px;
+                    word-break:break-all;
                     margin: 0px 30px;
                     margin-bottom: 5px;
+                    min-height: 60px;
+
+
 
                     hr {
                         width: 100%;
@@ -328,14 +341,12 @@
                     }
     
                     .comment-item-content {
-                        margin: 14px;
-                        float: left;
+                        margin-bottom: 30px;
                     }
     
                     .comment-item-info {
-                        margin: 8px;
+                        margin-bottom: 12px;
                         margin-left: 12px;
-                        float: right;
                         font-size: small;
                     }
                 }
@@ -395,30 +406,6 @@
                         min-width: 550px;
                         max-width: 550px;
                     }
-                    
-                    .comment-item {
-                        height: 50px;
-                        margin: 0px 30px;
-                        margin-bottom: 5px;
-
-                        hr {
-                            width: 100%;
-                            margin: 10px auto;
-                            color: #c8c8c8;
-                        }
-        
-                        .comment-item-content {
-                            margin: 14px;
-                            float: left;
-                        }
-        
-                        .comment-item-info {
-                            margin: 8px;
-                            margin-left: 12px;
-                            float: right;
-                            font-size: small;
-                        }
-                    }
                 }
             }
         }
@@ -476,30 +463,6 @@
                         min-width: 450px;
                         max-width: 450px;
                     }
-
-                    .comment-item {
-                        height: 50px;
-                        margin: 0px 30px;
-                        margin-bottom: 5px;
-
-                        hr {
-                            width: 100%;
-                            margin: 10px auto;
-                            color: #c8c8c8;
-                        }
-        
-                        .comment-item-content {
-                            margin: 14px;
-                            float: left;
-                        }
-        
-                        .comment-item-info {
-                            margin: 8px;
-                            margin-left: 12px;
-                            float: right;
-                            font-size: small;
-                        }
-                    }
                 }
             }
         }
@@ -556,30 +519,18 @@
                         min-height: 400px;
                         min-width: 350px;
                         max-width: 350px;
+                    } 
+
+                    .comment-write {
+                        margin-left: 3%;
+                        margin-bottom: 20px;
+                        min-width: 75%;
+                        max-width: 75%;
+                        min-height: 80px;
                     }
 
-                    .comment-item {
-                        height: 50px;
-                        margin: 0px 30px;
-                        margin-bottom: 5px;
-
-                        hr {
-                            width: 100%;
-                            margin: 10px auto;
-                            color: #c8c8c8;
-                        }
-        
-                        .comment-item-content {
-                            margin: 14px;
-                            float: left;
-                        }
-        
-                        .comment-item-info {
-                            margin: 8px;
-                            margin-left: 12px;
-                            float: right;
-                            font-size: small;
-                        }
+                    .comment-write-button {
+                        margin-left: 20px;
                     }
                 }
             }
@@ -640,30 +591,6 @@
                         min-width: 87%;
                         max-width: 87%;
                     }
-
-                    .comment-item {
-                        height: 50px;
-                        margin: 0px 30px;
-                        margin-bottom: 5px;
-
-                        hr {
-                            width: 100%;
-                            margin: 10px auto;
-                            color: #c8c8c8;
-                        }
-        
-                        .comment-item-content {
-                            margin: 14px;
-                            float: left;
-                        }
-        
-                        .comment-item-info {
-                            margin: 8px;
-                            margin-left: 12px;
-                            float: right;
-                            font-size: small;
-                        }
-                    }
                 }
             }
         }
@@ -721,30 +648,6 @@
                         min-width: 87%;
                         max-width: 87%;
                     }
-
-                    .comment-item {
-                        height: 50px;
-                        margin: 0px 30px;
-                        margin-bottom: 5px;
-
-                        hr {
-                            width: 100%;
-                            margin: 10px auto;
-                            color: #c8c8c8;
-                        }
-        
-                        .comment-item-content {
-                            margin: 14px;
-                            float: left;
-                        }
-        
-                        .comment-item-info {
-                            margin: 8px;
-                            margin-left: 12px;
-                            float: right;
-                            font-size: small;
-                        }
-                    }
                 }
             }
         }
@@ -800,32 +703,6 @@
                         min-height: 400px;
                         min-width: 250px;
                         max-width: 250px;
-                    }
-
-                    .comment-item {
-                        border-color: #c8c8c8;
-                        height: 50px;
-                        margin: 0px 30px;
-                        margin-bottom: 5px;
-
-                        
-                        hr {
-                            width: 100%;
-                            margin: 10px auto;
-                            color: #c8c8c8;
-                        }
-        
-                        .comment-item-content {
-                            margin: 14px;
-                            float: left;
-                        }
-        
-                        .comment-item-info {
-                            margin: 8px;
-                            margin-left: 12px;
-                            float: right;
-                            font-size: small;
-                        }
                     }
                 }
             }

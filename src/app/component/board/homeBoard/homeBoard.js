@@ -1,16 +1,10 @@
 class HomeBoardController {
-    constructor() {
-        
-    }
-
-    $onInit() {
-
-    }
+    
 }
 
 export default {
+    url: '/',
     controller: HomeBoardController,
-    template: require('./homeBoard.html'),
     controllerAs: '$ctrl',
-    bindings: {}
+    template: require('./homeBoard.html')
 }

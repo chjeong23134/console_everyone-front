@@ -77,15 +77,11 @@ class ComprehensiveBoardController {
             }
         ];
     }
-
-    $onInit() {
-        
-    }
 }
 
 export default {
+    url: '/bbs',
     controller: ComprehensiveBoardController,
-    template: require('./comprehensiveBoard.html'),
     controllerAs: '$ctrl',
-    bindings: {}
+    template: require('./comprehensiveBoard.html')
 }
